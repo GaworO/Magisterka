@@ -8,12 +8,23 @@
     <meta name="author" content=""/>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-   <script th:attr="src=@{/vendor/js/modernizr-2.6.2.min.js}"></script>
+    <script th:attr="src=@{/vendor/js/modernizr-2.6.2.min.js}"></script>
 
 </head>
 <body>
+<h1>Result</h1>
 
-<h1>Strona główmna</h1>
+
+<div th:each="choice : ${choice}" >
+
+    <span th:text="${choice.colar}"></span>
+    <span th:text="${choice.chais}"></span>
+    <span th:text="${choice.dispenser}"></span>
+    <span th:text="${choice.gravity}"></span>
+    <span th:text="${choice.slip}"></span>
+</div>
+
+
 <!-- jQuery -->
 <script th:attr="src=@{/vendor/js/jquery.min.js}"></script>
 
