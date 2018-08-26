@@ -14,30 +14,28 @@ public class Choice {
 
 
   @Column(name = "colar")
-  private Boolean colar;
+  private String colar;
 
   @Column(name = "chais")
-  private Boolean chais;
+  private String chais;
 
   @Column(name = "dispenser")
-  private Boolean dispenser;
+  private String dispenser;
 
   @Column(name = "gravity")
-  private Boolean gravity;
+  private String gravity;
 
   @Column(name = "slip")
-  private Boolean slip;
+  private String slip;
 
   @OneToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "client_id")
   private Client client;
 
-
-
   public Choice() {
   }
 
-  public Choice(Boolean colar, Boolean chais, Boolean dispenser, Boolean gravity, Boolean slip, Client client) {
+  public Choice(String colar, String chais, String dispenser, String gravity, String slip, Client client) {
     this.colar = colar;
     this.chais = chais;
     this.dispenser = dispenser;
@@ -54,43 +52,43 @@ public class Choice {
     this.id = id;
   }
 
-  public Boolean getColar() {
+  public String getColar() {
     return colar;
   }
 
-  public void setColar(Boolean colar) {
+  public void setColar(String colar) {
     this.colar = colar;
   }
 
-  public Boolean getChais() {
+  public String getChais() {
     return chais;
   }
 
-  public void setChais(Boolean chais) {
+  public void setChais(String chais) {
     this.chais = chais;
   }
 
-  public Boolean getDispenser() {
+  public String getDispenser() {
     return dispenser;
   }
 
-  public void setDispenser(Boolean dispenser) {
+  public void setDispenser(String dispenser) {
     this.dispenser = dispenser;
   }
 
-  public Boolean getGravity() {
+  public String getGravity() {
     return gravity;
   }
 
-  public void setGravity(Boolean gravity) {
+  public void setGravity(String gravity) {
     this.gravity = gravity;
   }
 
-  public Boolean getSlip() {
+  public String getSlip() {
     return slip;
   }
 
-  public void setSlip(Boolean slip) {
+  public void setSlip(String slip) {
     this.slip = slip;
   }
 
@@ -106,12 +104,12 @@ public class Choice {
   @Override
   public String toString() {
     return "Choice{" +
-            "id=" + id.intValue() + "\n" +
-            ", colar=" + colar.booleanValue() +
-            ", chais=" + chais.booleanValue() +
-            ", dispenser=" + dispenser.booleanValue() +
-            ", gravity=" + gravity.booleanValue() +
-            ", slip=" + slip.booleanValue() +
+            "id=" + id +
+            ", colar='" + colar + '\'' +
+            ", chais='" + chais + '\'' +
+            ", dispenser='" + dispenser + '\'' +
+            ", gravity='" + gravity + '\'' +
+            ", slip='" + slip + '\'' +
             ", client=" + client +
             '}';
   }

@@ -1,0 +1,14 @@
+{
+  "name": "Magisterka",
+  "homepage": "https://github.com/GaworO/Magisterka",
+  "authors": [
+    "Aleksadra Wiktoria Gawor"
+  ],
+  "description": "Aleksandra Gawor Praca Magisterka Informatyka i Ekonometria UW",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {
+    "rest": "~1",
+    "curl": "~0.8"
+  }
+}

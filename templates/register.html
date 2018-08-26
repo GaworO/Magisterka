@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Login and Registration Form with HTML5 and CSS3</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet"/>
+
+</head>
+<body>
+<div class="container">
+    <section>
+        <div id="container_demo" >
+
+            <a class="hiddenanchor" id="toregister"></a>
+            <a class="hiddenanchor" id="tologin"></a>
+            <div id="wrapper">
+                <div id="login" class="animate form">
+                    <form  th:action="@{/client/add}" autocomplete="on" method="post" th:object="${client}">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="text-center">Hi!</h1>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <input type="text" id="name" placeholder="Name" class="form-control input-lg" th:field="*{name}"/>
+                                    </div>
+
+                                     <div class="form-group">
+                                                                                                 <div class="form-group">
+                                        <input type="text" placeholder="Email" class="form-control" id="email" th:field="*{email}"/>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input type="submit" class="btn btn-block btn-lg btn-primary" value="Register"/>
+
+                                        <!--<span class="pull-right"><a href="#">Register</a></span><span><a href="#">Forgot Password</a></span>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
