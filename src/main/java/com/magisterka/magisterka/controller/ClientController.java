@@ -32,7 +32,6 @@ public class ClientController {
   @PostMapping("/add")
   public String newClinet(@ModelAttribute Client client , Model model) {
     clr.save(client);
-    model.addAttribute("choice" , new Choice());
     return "dashbord";
   }
 

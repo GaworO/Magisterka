@@ -37,19 +37,19 @@ $(function() {
             body: JSON.stringify(data)
         }
 
-    req(options, (err, res, body) => {
-
-        if(
-    !err &amp;&amp;  res.statusCode == 200
-)
-    {
-        console.log(body);
-    }
-else
-    {
-        console.log("The request failed with status code: " + res.statusCode);
-    }
-})
+//     req(options, (err, res, body) => {
+//
+//         if(
+//     !err &amp;&amp;  res.statusCode == 200
+// )
+//     {
+//         console.log(body);
+//     }
+// else
+//     {
+//         console.log("The request failed with status code: " + res.statusCode);
+//     }
+// })
 
     });
-});
+})

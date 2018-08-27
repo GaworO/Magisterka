@@ -9,7 +9,7 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <script th:attr="src=@{/vendor/js/modernizr-2.6.2.min.js}"></script>
-
+    <script th:attr="src=@{/vendor/js/require.js}"></script>
 </head>
 <body>
 <h1>Result</h1>
@@ -57,19 +57,19 @@
                 body: JSON.stringify(data)
             }
 
-            req(options, (err, res, body) => {
-
-                if(
-            !err &amp;&amp;   res.statusCode == 200
-        )
-            {
-                console.log(body);
-            }
-        else
-            {
-                console.log("The request failed with status code: " + res.statusCode);
-            }
-        })
+//            req(options, (err, res, body) => {
+//
+//                if(
+//            !err &amp;&amp;   res.statusCode == 200
+//        )
+//            {
+//                console.log(body);
+//            }
+//        else
+//            {
+//                console.log("The request failed with status code: " + res.statusCode);
+//            }
+//        })
 
         });
     });
@@ -86,7 +86,7 @@
 <script th:attr="src=@{/vendor/js/jquery.waypoints.min.js}"></script>
 <!-- Counters -->
 <script th:attr="src=@{/vendor/js/jquery.countTo.js}"></script>
-
+<script th:attr="src=@{/vendor/js/require.js}"></script>
 
 <!-- MAIN JS -->
 <script th:attr="src=@{/vendor/js/main.js}"></script>
